@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Inv-9s-Ng7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -20,12 +21,18 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jPV-b5-bUi" id="LW5-T7-8q1">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-rN-D1a">
-                                                    <rect key="frame" x="8" y="7" width="584" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-rN-D1a">
+                                                    <rect key="frame" x="13" y="8" width="584" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gUX-rN-D1a" firstAttribute="leading" secondItem="LW5-T7-8q1" secondAttribute="leadingMargin" constant="5" id="3z5-tq-TEx"/>
+                                                <constraint firstItem="gUX-rN-D1a" firstAttribute="top" secondItem="LW5-T7-8q1" secondAttribute="topMargin" id="76M-3E-Azx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gUX-rN-D1a" secondAttribute="bottom" id="Bio-Ka-LnD"/>
+                                                <constraint firstItem="gUX-rN-D1a" firstAttribute="trailing" secondItem="LW5-T7-8q1" secondAttribute="trailingMargin" constant="5" id="dca-zK-Bf4"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
