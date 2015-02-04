@@ -166,6 +166,4 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
             }
     }
     
-
-    
 }
